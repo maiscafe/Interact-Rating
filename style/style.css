@@ -105,11 +105,6 @@ body{
 }
 
 @media screen and (max-width: 440px) {
-    
-    body {
-        background: red;
-    }
-
     .flex-box {
         padding: 30px 24px;
         margin: 10px;
