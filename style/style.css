@@ -160,7 +160,6 @@ body{
     line-height: 1.6em;
     margin: 10px 0px 0px 0px;
 }
-
 /* Responsive */
 @media screen and (max-width: 440px) {
     .flex-box {

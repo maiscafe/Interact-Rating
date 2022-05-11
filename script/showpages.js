@@ -8,20 +8,30 @@ secondPage.style.display = "none";
 alertSpan.style.display = "none";
 
 
-    btnSubmit.addEventListener("click", showSecondPage);
-    secondPage.addEventListener("click",showAlert);
+btnSubmit.addEventListener("click", showSecondPage);
+secondPage.addEventListener("click", 
+function(){
+    alertSpan.style.display = "flex";
+    timer()
+    });
 
 
 function showFirstPage(){
     firstPage.style.display = "flex";
     secondPage.style.display = "none";
+    alertSpan.style.display = "none";
 }
 
 function showSecondPage(){
     firstPage.style.display = "none";
     secondPage.style.display = "flex";
+    alertSpan.style.display = "none";
 }
 
-function showAlert(){
-    alert("Thank you for your submission!");
+
+function timer(){
+    alertSpan.textContent = "You will be redirected to the home page in 5 seconds";
+    setTimeout(function(){
+        window.location.href = "index.html";
+    }, 5000);
 }
