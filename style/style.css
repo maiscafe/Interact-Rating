@@ -15,7 +15,14 @@
     font-family: 'Overpass', sans-serif;
     font-weight: 400;
 }
-
+/* Desabitiar seleção de texto */
+ .disable-text {
+    -webkit-user-select:none;
+    -webkit-touch-callout:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none; 
+ }
 /* first page */
 body{
     background: var(--background);
@@ -42,8 +49,8 @@ body{
 }
 /* flex-box is being used for both */
 .flex-box {
-    padding: 30px 24px;
-    height: 400px;
+    padding: 26px 24px;
+    height: 340px;
     display: flex;
     background: var(--darkBlue);
     background: linear-gradient(332deg, rgba(23,30,40,1) 0%, rgba(30,37,47,1) 100%);
@@ -51,7 +58,7 @@ body{
     margin: 10px;
     border-radius: 24px;
     width: 335px;
-    box-shadow:  inset 0px 48px 100px -5px rgba(33, 44, 56, 0.5);;
+    box-shadow: inset 0px 133px 193px -51px rgba(32, 40, 49, 0.527);
 }
 #span-img {
     background: var(--grayBlue);
@@ -78,6 +85,9 @@ body{
     justify-content: center;
     background: var(--grayBlue);
     border-radius: 50%;
+    color: var(--textGray);
+    font-size: 0.8em;
+    font-weight: bold;
     height: 40px;
     width: 40px;
 
@@ -85,10 +95,11 @@ body{
 .btnChoice:hover {
     cursor: pointer;
     background: var(--orange);
+    color: var(--white);
 }
 #btnSubmit {
     width: 280px;
-    height: 45px;
+    height: 40px;
     margin:0 auto;
     border-radius: 40px;
     border: none;
@@ -97,13 +108,14 @@ body{
     font-weight: bold;
     letter-spacing: 0.1em;
     box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.541);
-    box-shadow: inset 2px 2px 8px -3px #faa162;
+    box-shadow: inset 5px 5px 8px -3px #b94f03;
 }
 #btnSubmit:hover {
     transition: 0.3s ease-in-out;
     cursor: pointer;
     color: var(--orange);
     background: var(--white);
+    box-shadow: inset 0px 0px 0px 0px #ffffff;
 }
 
 /* seconde page */
@@ -115,33 +127,49 @@ body{
     
 }
 #thanks-img {
+    pointer-events: none;
     display: flex;
     height: 130px;
-    width: 130px;
+    width: 50%;
     object-fit: contain;
 }
 #span-rating {
     display: flex;
     justify-content: center;
-    width: 100%;
+    align-items: flex-end;
+    width: 55%;
     object-fit: cover;
+    color: #C97334;
+    font-size: 0.8em;
+    margin: 10px 0px 12px 0px;
+    background: var(--grayBlue);
+    padding: 2px;
+    border-radius: 24px;
+    height: 25px;
+}
+.text-second-page {
+    text-align: center;
+}
+.h1-second-page {
+    width: 100%;
 }
 .p-second-page {
     color: var(--textGray);
-    font-size: 14px;
+    width: 100%;
+    font-size: 12px;
+    font-weight: bold;
     line-height: 1.6em;
     margin: 10px 0px 0px 0px;
-}
-.hidden {
-    display: none;
 }
 
 /* Responsive */
 @media screen and (max-width: 440px) {
     .flex-box {
-        padding: 30px 24px;
+        padding: 12px;
         margin: 10px;
         width: 305px;
+        border-radius: 16px;
+        height: 365px;
     }
     .container-flex {
         width: 100vw;
@@ -150,7 +178,10 @@ body{
         color: #7a808c;
         font-size: 14px;
         line-height: 1.6em;
-        margin: 10px 0px 0px 0px;
-    
+        margin: 2px 0px 0px 0px;
+    }
+    #btnSubmit {
+        height: 35px;
+        font-weight: bold;
     }
 }

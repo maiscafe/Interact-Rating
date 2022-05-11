@@ -10,8 +10,8 @@
         @import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
         </style>
 </head>
-<body class="container-flex">
-    <section id="first-page" class="flex-box ">
+<body class="container-flex disable-text">
+    <section id="first-page" class="flex-box">
         <span id= "span-img" ><img id="img" src="./assets/icon-star.svg" alt="star" srcset=""></span>
         <h1 id="h1-first-page">How did we do?</h1>
         <p class="p-first-page">Please let us know how we did with your support
@@ -24,14 +24,21 @@
             <div class="btnChoice">4</div>
             <div class="btnChoice">5</div>
         </div>
-        <button id="btnSubmit">SUBMIT</button>
+        <button id="btnSubmit" class="">SUBMIT</button>
     </section>
-    <section id="second-page" style="" class="flex-box">
+
+    <section id="second-page" class="flex-box">
         <img id="thanks-img" src="./assets/illustration-thank-you.svg" alt="" srcset="">
         <span id="span-rating">You selected 4 out of 5</span>
-        <h1> Thank you!</h1>
+        <div class="text-second-page"><h1 class="h1-second-page"> Thank you!</h1>
         <p class="p-second-page">We appreciate you taking the time to give a rating. <br>
-        if you ever need more support, don't hesite to get in touch!</p>
+        if you ever need more support, don't hesite to get in touch!</p></div>
+    </section>
+
+    <section id = "alert-span" class="flex-box">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe temporibus cum ut debitis laudantium. Neque quas, obcaecati est quisquam nobis a cumque voluptatem maiores nostrum ratione officiis. Magnam, quisquam aliquid?</p>
+
+    
     </section>
 </body>
 <script src="./script/script.js"></script>
