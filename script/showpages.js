@@ -15,13 +15,11 @@ alertSpan.style.display = "none";
 function showFirstPage(){
     firstPage.style.display = "flex";
     secondPage.style.display = "none";
-    thirdPage.style.display = "none";
 }
 
 function showSecondPage(){
     firstPage.style.display = "none";
     secondPage.style.display = "flex";
-    thirdPage.style.display = "none"
 }
 
 function showAlert(){
