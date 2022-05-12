@@ -21,5 +21,5 @@
 
 ## Como testar?
 
-**Você pode ver essa feature funcionando pelo meu github pages, clicando [aqui](https://maiscafe.github.io/Interactive-Rating).
-**Caso queira baixar o projeto e executar basta clonar o repositório ou baixar o arquivo.zip, depois é só executar o _html.index_
+**Você pode ver essa feature funcionando pelo meu github pages, clicando [aqui](https://maiscafe.github.io/Interactive-Rating).**
+**Caso queira baixar o projeto e executar basta clonar o repositório ou baixar o arquivo.zip, depois é só executar o _html.index_**
